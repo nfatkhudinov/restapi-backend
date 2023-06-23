@@ -1,0 +1,39 @@
+{
+  "name": "standalone-rest-api",
+  "version": "1.0.0",
+  "description": "Standalone API server for self projects with authentification and database connection via mongoose",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfatkhudinov/api-server.git"
+  },
+  "keywords": [
+    "rest",
+    "express",
+    "mongoose"
+  ],
+  "author": "N.Fatkhudinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfatkhudinov/api-server/issues"
+  },
+  "homepage": "https://github.com/nfatkhudinov/api-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "joi-password-complexity": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22",
+    "pkg": "^5.8.1"
+  }
+}
