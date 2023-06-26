@@ -1,26 +1,36 @@
 const db = require('mongoose')
+const {number, string, bool, boolean} = require("joi");
 const Schema  = db.Schema
 
 const habitSchema = new Schema(
     {
         userId: {
-            type: Number,
+            type: String,
             required: true,
         },
-        title: {
+        name: {
             type: String,
             required: true,
         },
         startDate: {
-            type: Date,
+            type: String,
             required: true,
         },
         expDate: {
-            type: Date,
+            type: String,
             required: true,
         },
-        completeDates: {
-            type: [Date]
+        taskLength: {
+            type: Number,
+            required: true,
+        },
+        isCompleted:{
+            type: Boolean,
+            required: true
+        },
+        daysArray:{
+            type: [],
+            required: true,
         }
     }
 )

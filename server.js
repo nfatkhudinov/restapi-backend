@@ -7,6 +7,7 @@ const dbConnection = require('./db')
 require('dotenv').config()
 const authRoutes = require('./routes/auth')
 const userRoutes = require('./routes/user')
+const habitRoutes = require('./routes/habit')
 
 /** Configuring CORS **/
 const corsOptions = {
@@ -21,6 +22,7 @@ app.use(bodyParser.json()) //JSON syntax analyzer for all routes
 
 app.use("/api", authRoutes)
 app.use("/api/user", userRoutes)
+app.use("/api/habit", habitRoutes)
 
 /** Connecting to database and starting listening port **/
 const listenToPort = ()=>{
